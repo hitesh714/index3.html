@@ -1,0 +1,539 @@
+<html>
+<head>
+<title>Website</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+#aa{
+    background-color:white;
+    color:green;
+    width:100%;
+    padding:60px 60px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    font-size:18px;
+}
+#aa h1 b{
+    color:#222;
+    font-weight:normal;
+padding:60px;
+font-size:25px;
+font-weight:bold;
+}
+#aa h1{
+    margin:0;
+    font-size:40px;
+    margin-right:auto;
+}
+
+#aa a{
+    color:green;
+    text-decoration:none;
+    white-space:nowrap;
+    margin-left:10px;
+    margin-right:10px;
+font-size:25px;
+}
+#aa a:hover{
+    text-decoration:underline;
+display:flex;
+gap:20px;
+}
+
+.bb{
+padding-top:0px;
+    background-color:blue;
+    color:white;
+    border:2px solid cyan;
+    padding:10px 20px;
+    cursor:pointer;
+    white-space:nowrap;
+}
+
+.bb:hover{
+    background-color:cyan;
+    color:black;
+    border:2px solid blue;
+}
+
+#cc{
+padding-top:auto;
+background-color:green;
+color:white;
+font-size:25px;
+width:100%;
+padding:20px 40px;
+}
+#dd{
+    background-color:#EEEEEE;
+    width:100%;
+    padding:30px 40px;
+    margin:0;
+}
+
+#dd h2{
+    margin:0;
+    font-size:30px;
+    font-weight:normal;
+    color:#222;
+}
+
+#dd h2 i{
+    color:green;
+    margin-right:8px;
+}
+
+#dd h2 span{
+    color:green;
+}
+
+#dd h2 b{
+    color:#222;
+    font-weight:normal;
+}
+#ee p{
+background-color:white;
+color: #242323;
+font-size:25px;
+width:100%;
+padding:20px 40px;
+}
+#ff{
+background-color:#EEEEEE;
+color:black;
+font-size:25px;
+width:100%;
+padding:20px 40px;
+}
+
+.oo{
+ background-color:green;
+    color:white;
+    font-size:25px;
+    width:100%;
+height:35%;
+    padding:20px 40px;
+    display:inline-block;
+    vertical-align:top;
+text-align:center;
+}
+.gg{
+    background-color:white;
+    width:100%;
+    padding:20px 40px;
+    font-size:25px;
+}
+
+.gg h2{
+    font-weight:bold;
+    font-size:30px;
+    margin:0 0 10px 0;
+    padding:0;
+}
+
+.gg p{
+    font-weight:normal;
+    font-size:25px;
+    width:100%;
+    padding:0;
+    margin:0 0 20px 0;
+    color:#242323;
+    text-align:left;
+    font-style:italic;
+}
+
+/* Boxes ko ek row mein lane ke liye */
+.gg .hh,
+.gg .mm{
+    background-color:#23933a;
+    color:white;
+    width:50%;
+    height:138px;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    float:left;
+}
+
+.gg .hh{
+    margin-right:10px;
+}
+
+.gg .mm{
+    width:calc(50% - 5px);
+}
+
+.gg .hh{
+    width:calc(50% - 5px);
+}
+
+.gg .hh h1,
+.gg .mm h1{
+    font-size:30px;
+    margin:0;
+}
+
+
+#ii{
+background-color:#EEEEEE;
+color:black;
+font-size:25px;
+width:100%;
+padding:20px 90px;
+text-align:left;
+
+}
+#ii p{
+text-align:left;
+width:100%;
+ color:#242323;
+font-weight:normal;
+font-size:25px;
+}
+
+
+#ii image{
+width:33%;}
+#ii .issues{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:150px;
+    row-gap:25px;
+    list-style:none;
+    padding:0;
+    margin:20px 0;
+}
+
+#ii .issues li{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    font-size:25px;
+    color:#222;
+}
+
+#ii .issues li i{
+    color:green;
+    font-size:28px;
+    width:30px;
+}
+
+
+
+
+
+#kk{
+    background-color: green;
+    color: white;
+    width: 100%;
+    padding: 28px 10px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
+}
+#ff h1 {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+
+}
+
+#ff h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 6px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+
+}
+#ff p{
+width:90%;
+font-size:25px;
+color: #242323;
+font-weight:normal;
+text-align:left;
+}
+.qq h3{
+ font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+font-size:40px;
+}
+
+.qq h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 6px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+
+}
+#jj{
+    width:100%;
+    background-color:#222;
+    color:white;
+    min-height:380px;
+    padding:60px 6.5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+/* LEFT */
+#jj .footer-left{
+    width:32%;
+}
+
+#jj .footer-left h1{
+    font-size:36px;
+    margin:35px 0 20px 0;
+    padding:0;
+    text-align:left;
+}
+
+#jj .footer-left h2{
+    font-size:25px;
+    line-height:1.7;
+    margin:0;
+    padding:0;
+    width:100%;
+    text-align:left;
+}
+
+
+jj .footer-middle{
+    width:28%;
+    text-align:center;
+}
+
+#jj .footer-middle h3{
+    font-size:28px;
+    font-weight:normal;
+    margin:5px 0 20px 0;
+    padding:0;
+}
+
+#jj .social{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:32px;
+    margin-top:15px;
+}
+
+#jj .social a{
+    background:none;
+    color:white;
+    padding:0;
+    margin:0;
+    width:auto;
+    font-size:35px;
+    display:block;
+text-decoration:none;
+}
+
+#jj .social a:hover{
+    color:#23933a;
+}
+
+#jj .footer-middle p{
+    font-size:25px;
+    width:100%;
+    padding:0;
+    margin-top:55px;
+    text-align:center;
+}
+
+
+#jj .footer-right{
+    width:32%;
+}
+
+#jj .footer-right h4{
+    font-size:25px;
+    font-weight:normal;
+    line-height:1.7;
+    margin:5px 0 0 0;
+    padding:0;
+    text-align:left;
+}
+
+
+
+
+#ee image{
+width:33%;
+}
+.accessibility{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:70px;
+    height:70px;
+    background-color:#1769ff;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    z-index:1000;
+}
+</style>
+<body>
+<header>
+<div id="aa">
+ <h1>GoGreen<br> <b>Initiatives</b></h1>
+<a href="#a">About</a>
+<a href="#">Indoor Air Quality</a>
+<a href="#">Recycling</a>
+<a href="#">Programs</a>
+<a href="#">Blog</a>
+<a href="#">Newsletter</a>
+<a href="#">Contact</a>
+<button class="bb">Donate</button>
+</div>
+</header>
+<section>
+<div id="cc">
+<h1>What We Do</h1>
+</div>
+<div id="dd">
+    <h2>
+        <i class="fa-solid fa-house"></i>
+        » <span>About</span> » <b>What We Do</b>
+    </h2>
+</div>
+<div id="ee">
+<p>The Go Green Intiative works to improve lifelong outcomes for children in communities most impacted by environmental harm by advancing environmental health, safety, and sustainability at school. We work in partnership with district administrators, school, stakeholders, and student leaders to improve the quality of te air, water, and food at school while conserving school and community resources.</p>
+<image src="C:\Users\abc\Desktop\aa.jpg"  alt="aa image" width:10%>
+<image src="C:\Users\abc\Desktop\bb.jpg"  alt="bb image" width:10%>
+<image src="C:\Users\abc\Desktop\cc.jpg"  alt="cc image" width:10%>
+</div>
+<div id="ff">  
+<h1>How We Work</h1>
+<p>Our five coore programs guide, train, and support school officials, staff, and students in improving indoor environmental conditions, conserving natural resources, and reducing environmental impacts.</p>
+</div>
+<div class="gg">
+    <h2>DISTRICT SERVICES</h2>
+
+    <p>
+        Our district services identify and implement custom solutions
+        to improve environmental factors at school.
+    </p>
+
+    <div class="hh">
+        <h1>Sustainability Plan</h1>
+    </div>
+
+    <div class="mm">
+        <h1>Utility Analysis & Reduction</h1>
+    </div>
+</div>
+<div class="gg">
+<h1>STUDENT INITIATIVES</h1>
+<p>Our student initiatives engage young leaders in environmental policy and sustainability syatems.</p>
+<div class="hh">
+<h1>Local Leaders of the 21st century</h1>
+</div>
+<div class="mm">
+<h1>Internships</h1>
+</div>
+</div>
+<div class="gg">
+<h1>Training</h1>
+<p>Our trainng programs develops skills and competencies to support sustainability projects</p>
+<div class="oo">
+<h1>Go Green Intiative Academy</h1>
+</div>
+</div>
+<div id="ii">
+<h1>Issues We're Tackling</h1>
+<p>We are commited to protecting children's needs today and tommorow. To improve environmental factors impacting children's daily lives and ensure a healthy environment for their future, we take action in the following areas.</p>
+<ol class="issues">
+    <li><i class="fa-solid fa-star"></i>Energy</li>
+    <li><i class="fa-solid fa-star"></i>Sustainability</li>
+    <li><i class="fa-solid fa-star"></i>Water</li>
+    <li><i class="fa-solid fa-star"></i>Air Quality</li>
+    <li><i class="fa-solid fa-star"></i>Food</li>
+    <li><i class="fa-solid fa-star"></i>Health</li>
+    <li><i class="fa-solid fa-star"></i>Recycling & Waste</li>
+    <li><i class="fa-solid fa-star"></i>Climate Change</li>
+</ol>
+<image src="C:\Users\abc\Desktop\dd.jpg"  alt="dd image" width:10%>
+<image src="C:\Users\abc\Desktop\ee.jpg"  alt="ee image" width:10%>
+<image src="C:\Users\abc\Desktop\ff.jpg"  alt="ff image" width:10%>
+<image src="C:\Users\abc\Desktop\gg.jpg"  alt="gg image" width:10%>
+<image src="C:\Users\abc\Desktop\hh.jpg"  alt="hh image" width:10%>
+<image src="C:\Users\abc\Desktop\ii.jpg"  alt="ii image" width:10%>
+</div>
+<div id="jj">
+
+    <div class="footer-left">
+        <h1>Go Green Initiative</h1>
+        <h2>
+            4307A Valley Avenue, Suite 2<br>
+            Pleasanton, CA 94566
+        </h2>
+    </div>
+
+    <div class="footer-middle">
+        <h3>Stay Connected</h3>
+
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+
+        <p>Sign up for our newsletter!</p>
+    </div>
+
+    <div class="footer-right">
+        <h4>
+            Go Green Initiative is a nonprofit, tax-exempt
+            501(c)(3) charitable organization under Section
+            501(c)(3) of the Internal Revenue Code. Donations
+            are tax-deductible as allowed by law. (GGI tax ID
+            number 71-0958208.)
+        </h4>
+    </div>
+
+</div>
+<div class="accessibility">
+    <i class="fa-solid fa-universal-access"></i>
+</div>
+</section>
+<footer>
+<div id="kk">
+<h1>Copyright &copy Go Green Intiatives. All Rights Reserved | Privacy Policy | Governance & Finace</h1>
+</div>
+
+</footer>
+</body>
+</html>
